@@ -42,9 +42,9 @@ parm = Ingredient.create(name: "Parmesan", description: "Par for the course", pi
 gorgonzola = Ingredient.create(name: "Gorgonzola", description: "From Gonzaga university", picture: "https://live.staticflickr.com/1333/1418700825_6bfd6a554e_z.jpg", category: "cheese")
 prov = Ingredient.create(name: "Provolone", description: "The provenance of our Provelone is nonpareil", picture: "https://live.staticflickr.com/102/291975884_a7de508af0_c.jpg", category: "cheese")
 
-chz = Pizza.create(name: "Classic Cheese", size: "medium", bake: "normal", price: 10.00 )
-pep = Pizza.create(name: "Classic Pepperoni", size: "large", bake: "normal", price:  12.00)
-veg = Pizza.create(name: "Veggie-lovers", size: "small", bake: "normal", price:  9.00)
+chz = Pizza.create(name: "Classic Cheese", size: "medium", bake: "normal", price: 10.00, cut: 'normal')
+pep = Pizza.create(name: "Classic Pepperoni", size: "large", bake: "normal", price:  12.00, cut: 'square')
+veg = Pizza.create(name: "Veggie-lovers", size: "small", bake: "normal", price:  9.00, cut: 'normal')
 
 PizzaIngredient.create(pizza: chz, ingredient: mozz)
 PizzaIngredient.create(pizza: chz, ingredient: marinara)
