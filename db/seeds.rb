@@ -42,9 +42,9 @@ parm = Ingredient.create(name: "Parmesan", description: "Par for the course", pi
 gorgonzola = Ingredient.create(name: "Gorgonzola", description: "From Gonzaga university", picture: "https://live.staticflickr.com/1333/1418700825_6bfd6a554e_z.jpg", category: "cheese")
 prov = Ingredient.create(name: "Provolone", description: "The provenance of our Provelone is nonpareil", picture: "https://live.staticflickr.com/102/291975884_a7de508af0_c.jpg", category: "cheese")
 
-chz = Pizza.create(name: "Classic Cheese", size: "medium", bake: "normal", price: 10.00, cut: 'normal')
-pep = Pizza.create(name: "Classic Pepperoni", size: "large", bake: "normal", price:  12.00, cut: 'square')
-veg = Pizza.create(name: "Veggie-lovers", size: "small", bake: "normal", price:  9.00, cut: 'normal')
+chz = Pizza.create(name: "Classic Cheese", size: "medium", bake: "normal", price: 10.00, cut: 'normal', pic: 'https://live.staticflickr.com/6215/6306091349_8cf7571ff8_z.jpg')
+pep = Pizza.create(name: "Classic Pepperoni", size: "large", bake: "normal", price:  12.00, cut: 'normal', pic: 'https://cdn.pixabay.com/photo/2020/02/04/12/14/pepperoni-4818019_960_720.jpg')
+veg = Pizza.create(name: "Veggie-lovers", size: "small", bake: "normal", price:  9.00, cut: 'normal', pic: 'https://live.staticflickr.com/397/19540578441_e29974de97_b.jpg')
 
 PizzaIngredient.create(pizza: chz, ingredient: mozz)
 PizzaIngredient.create(pizza: chz, ingredient: marinara)
@@ -70,6 +70,3 @@ order1 = Order.create(customer: paul, pizza: chz, delivery_instructions: "hurry 
 order2 = Order.create(customer: ann, pizza: pep, delivery_instructions: "i am hungry")
 order3 = Order.create(customer: shannon, pizza: chz, delivery_instructions: "no anchovies this time")
 order4 = Order.create(customer: chine, pizza: veg, delivery_instructions: "don't send the creepy bike guy")
-
-
-
