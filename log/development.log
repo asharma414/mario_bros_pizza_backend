@@ -8252,3 +8252,437 @@ Processing by IngredientsController#index as */*
 Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms | Allocations: 4695)
 
 
+Started GET "/ingredients" for ::1 at 2020-06-15 16:04:04 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:04:04 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:04:04 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:04:04 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:04:04 -0400
+  [1m[35m (21.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (1.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (8.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (8.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (10.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#prices as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Completed 200 OK in 14ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 4641)
+
+
+  [1m[36mIngredient Load (8.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  [1m[36mIngredient Load (2.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mIngredient Load (9.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  [1m[36mIngredient Load (11.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 64ms (Views: 38.2ms | ActiveRecord: 19.0ms | Allocations: 17809)
+
+
+Completed 200 OK in 73ms (Views: 13.2ms | ActiveRecord: 45.0ms | Allocations: 25058)
+
+
+Completed 200 OK in 77ms (Views: 7.4ms | ActiveRecord: 62.7ms | Allocations: 28857)
+
+
+Completed 200 OK in 68ms (Views: 11.1ms | ActiveRecord: 49.9ms | Allocations: 21420)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-15 16:07:16 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:07:16 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:07:16 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:07:16 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:07:16 -0400
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (23.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 31ms (Views: 7.5ms | ActiveRecord: 23.4ms | Allocations: 6857)
+
+
+  [1m[36mIngredient Load (10.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+Processing by IngredientsController#index as */*
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  [1m[36mIngredient Load (12.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  [1m[36mIngredient Load (6.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 26ms (Views: 18.8ms | ActiveRecord: 6.6ms | Allocations: 13322)
+
+
+Completed 200 OK in 20ms (Views: 9.3ms | ActiveRecord: 10.3ms | Allocations: 10171)
+
+
+Completed 200 OK in 33ms (Views: 20.0ms | ActiveRecord: 12.3ms | Allocations: 15460)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-15 16:09:09 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:09:09 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:09:09 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:09:09 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:09:09 -0400
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (4.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+Processing by IngredientsController#index as */*
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 19ms (Views: 14.1ms | ActiveRecord: 4.6ms | Allocations: 7102)
+
+
+  [1m[36mIngredient Load (3.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+Processing by IngredientsController#prices as */*
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  [1m[36mIngredient Load (9.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mIngredient Load (15.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 12.8ms | ActiveRecord: 15.8ms | Allocations: 11027)
+
+
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 47ms (Views: 43.8ms | ActiveRecord: 3.0ms | Allocations: 17378)
+
+
+Completed 200 OK in 46ms (Views: 35.9ms | ActiveRecord: 9.9ms | Allocations: 18773)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-15 16:12:03 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:12:03 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:12:03 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:12:03 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:12:03 -0400
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+  [1m[36mIngredient Load (2.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (3.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 23.9ms | ActiveRecord: 3.1ms | Allocations: 12051)
+
+
+Completed 200 OK in 16ms (Views: 13.6ms | ActiveRecord: 2.2ms | Allocations: 7507)
+
+
+  [1m[36mIngredient Load (19.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  [1m[36mIngredient Load (8.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+Completed 200 OK in 31ms (Views: 10.9ms | ActiveRecord: 19.9ms | Allocations: 13705)
+
+
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 38ms (Views: 29.1ms | ActiveRecord: 8.7ms | Allocations: 18562)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-15 16:12:37 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:12:37 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:12:37 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:12:37 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:12:37 -0400
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 152)
+
+
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (4.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Processing by IngredientsController#index as */*
+Completed 200 OK in 17ms (Views: 11.5ms | ActiveRecord: 4.8ms | Allocations: 6441)
+
+
+  [1m[36mIngredient Load (12.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 21ms (Views: 8.8ms | ActiveRecord: 12.3ms | Allocations: 9714)
+
+
+  [1m[36mIngredient Load (20.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 7.9ms | ActiveRecord: 20.6ms | Allocations: 14439)
+
+
+  [1m[36mIngredient Load (25.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 32ms (Views: 6.3ms | ActiveRecord: 25.3ms | Allocations: 18276)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-15 16:13:27 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:13:27 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:13:27 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:13:27 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:13:27 -0400
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (8.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mIngredient Load (5.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  [1m[36mIngredient Load (2.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 9.7ms | ActiveRecord: 5.9ms | Allocations: 6790)
+
+
+  [1m[36mIngredient Load (1.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+Completed 200 OK in 28ms (Views: 18.8ms | ActiveRecord: 8.5ms | Allocations: 11589)
+
+
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 32ms (Views: 29.8ms | ActiveRecord: 2.0ms | Allocations: 15120)
+
+
+Completed 200 OK in 41ms (Views: 39.4ms | ActiveRecord: 1.7ms | Allocations: 19131)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-15 16:14:43 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:14:43 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:14:43 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:14:43 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:14:43 -0400
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (1.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+Completed 200 OK in 13ms (Views: 11.3ms | ActiveRecord: 1.5ms | Allocations: 6165)
+
+
+  [1m[36mIngredient Load (3.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 27.6ms | ActiveRecord: 0.5ms | Allocations: 11920)
+
+
+Completed 200 OK in 35ms (Views: 33.9ms | ActiveRecord: 0.6ms | Allocations: 10943)
+
+
+Completed 200 OK in 55ms (Views: 52.0ms | ActiveRecord: 3.1ms | Allocations: 20696)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-15 16:14:53 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:14:53 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:14:53 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:14:53 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:14:53 -0400
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (2.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Completed 200 OK in 13ms (Views: 10.3ms | ActiveRecord: 2.0ms | Allocations: 4695)
+
+
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (25.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mIngredient Load (5.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  [1m[36mIngredient Load (12.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 33ms (Views: 7.2ms | ActiveRecord: 25.5ms | Allocations: 7729)
+
+
+Completed 200 OK in 46ms (Views: 40.1ms | ActiveRecord: 5.7ms | Allocations: 13962)
+
+
+Completed 200 OK in 30ms (Views: 17.2ms | ActiveRecord: 12.6ms | Allocations: 10683)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-15 16:18:09 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:18:09 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:18:09 -0400
+Processing by IngredientsController#index as */*
+Started GET "/ingredients" for ::1 at 2020-06-15 16:18:09 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:18:09 -0400
+  [1m[36mIngredient Load (1.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 18ms (Views: 14.8ms | ActiveRecord: 1.8ms | Allocations: 5828)
+
+
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (1.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mIngredient Load (0.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 10ms (Views: 8.5ms | ActiveRecord: 0.8ms | Allocations: 5603)
+
+
+  [1m[36mIngredient Load (2.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 20ms (Views: 16.6ms | ActiveRecord: 2.4ms | Allocations: 10409)
+
+
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 1.8ms | Allocations: 14706)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-15 16:18:26 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:18:26 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:18:26 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:18:26 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:18:26 -0400
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#prices as */*
+Processing by IngredientsController#index as */*
+Completed 200 OK in 1ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 283)
+
+
+  [1m[36mIngredient Load (1.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mIngredient Load (2.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mIngredient Load (1.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 32ms (Views: 26.9ms | ActiveRecord: 2.8ms | Allocations: 14606)
+
+
+  [1m[36mIngredient Load (14.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+Completed 200 OK in 28ms (Views: 26.0ms | ActiveRecord: 1.9ms | Allocations: 11221)
+
+
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 40ms (Views: 24.7ms | ActiveRecord: 14.9ms | Allocations: 19043)
+
+
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 1.1ms | Allocations: 6497)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-15 16:18:43 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:18:43 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:18:43 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:18:43 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:18:43 -0400
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (8.0ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 22ms (Views: 12.2ms | ActiveRecord: 8.0ms | Allocations: 6778)
+
+
+Completed 200 OK in 7ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 3841)
+
+
+  [1m[36mIngredient Load (21.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 32ms (Views: 10.4ms | ActiveRecord: 21.4ms | Allocations: 11616)
+
+
+  [1m[36mIngredient Load (26.8ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  [1m[36mIngredient Load (28.7ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 47ms (Views: 19.6ms | ActiveRecord: 26.8ms | Allocations: 16279)
+
+
+Completed 200 OK in 59ms (Views: 26.2ms | ActiveRecord: 28.7ms | Allocations: 20721)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-15 16:19:27 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:19:27 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:19:27 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:19:27 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:19:27 -0400
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#prices as */*
+Processing by IngredientsController#index as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+  [1m[36mIngredient Load (3.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mIngredient Load (6.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 29ms (Views: 21.8ms | ActiveRecord: 6.6ms | Allocations: 11449)
+
+
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (28.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 16ms (Views: 12.2ms | ActiveRecord: 3.4ms | Allocations: 6962)
+
+
+Completed 200 OK in 54ms (Views: 25.6ms | ActiveRecord: 28.4ms | Allocations: 14670)
+
+
+  [1m[36mIngredient Load (27.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 37ms (Views: 9.6ms | ActiveRecord: 27.2ms | Allocations: 9695)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-15 16:21:55 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:21:55 -0400
+Processing by IngredientsController#index as */*
+Started GET "/ingredients" for ::1 at 2020-06-15 16:21:55 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-15 16:21:55 -0400
+Started GET "/ingredients" for ::1 at 2020-06-15 16:21:55 -0400
+  [1m[36mIngredient Load (4.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 0ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+Processing by IngredientsController#index as */*
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 23ms (Views: 18.7ms | ActiveRecord: 4.6ms | Allocations: 7765)
+
+
+  [1m[36mIngredient Load (15.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 27ms (Views: 11.1ms | ActiveRecord: 15.9ms | Allocations: 9494)
+
+
+  [1m[36mIngredient Load (22.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  [1m[36mIngredient Load (26.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 31ms (Views: 7.5ms | ActiveRecord: 22.1ms | Allocations: 14311)
+
+
+Completed 200 OK in 41ms (Views: 14.1ms | ActiveRecord: 26.4ms | Allocations: 18862)
+
+
