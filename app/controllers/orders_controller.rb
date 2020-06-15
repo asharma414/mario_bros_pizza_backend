@@ -8,6 +8,7 @@ class OrdersController < ApplicationController
         if next_pies.empty?
             pizza = Pizza.create(size: params[:size], bake: params[:bake], cut: params[:cut], ingredients: paramIngredients)
             pizza.price = pizza.calculate_price
+            pizza.save
         else
             pizza = next_pies[0]
         end

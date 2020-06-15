@@ -14,7 +14,7 @@ class Pizza < ApplicationRecord
         ingredient_array = self.ingredients.to_a
         ingredient_array.map!(&:category)
 
-        total = size_prices[self.size]
+        total = Pizza.size_prices[self.size]
         
         total += ingredient_array.map {|ing| Ingredient.prices[ing]}.sum
         return total

@@ -42,9 +42,9 @@ parm = Ingredient.create(name: "Parmesan", description: "Par for the course", pi
 gorgonzola = Ingredient.create(name: "Gorgonzola", description: "From Gonzaga university", picture: "https://live.staticflickr.com/1333/1418700825_6bfd6a554e_z.jpg", category: "cheese")
 prov = Ingredient.create(name: "Provolone", description: "The provenance of our Provelone is nonpareil", picture: "https://live.staticflickr.com/102/291975884_a7de508af0_c.jpg", category: "cheese")
 
-chz = Pizza.create(name: "Classic Cheese", size: "medium", bake: "normal", price: 10.00, cut: 'normal', pic: 'https://live.staticflickr.com/6215/6306091349_8cf7571ff8_z.jpg')
-pep = Pizza.create(name: "Classic Pepperoni", size: "large", bake: "normal", price:  12.00, cut: 'normal', pic: 'https://cdn.pixabay.com/photo/2020/02/04/12/14/pepperoni-4818019_960_720.jpg')
-veg = Pizza.create(name: "Veggie-lovers", size: "small", bake: "normal", price:  9.00, cut: 'normal', pic: 'https://live.staticflickr.com/397/19540578441_e29974de97_b.jpg')
+chz = Pizza.create(name: "Classic Cheese", size: "medium", bake: "normal", price: 10.00, cut: 'normal', pic: 'https://live.staticflickr.com/3103/2426649282_6f3c715f24_b.jpg')
+pep = Pizza.create(name: "Classic Pepperoni", size: "large", bake: "normal", price:  12.00, cut: 'normal', pic: 'https://live.staticflickr.com/3007/2738662382_c5a0c9f215_b.jpg')
+veg = Pizza.create(name: "Veggie-lovers", size: "small", bake: "normal", price:  9.00, cut: 'normal', pic: 'https://live.staticflickr.com/252/452597581_bc01725397_b.jpg')
 
 PizzaIngredient.create(pizza: chz, ingredient: mozz)
 PizzaIngredient.create(pizza: chz, ingredient: marinara)
