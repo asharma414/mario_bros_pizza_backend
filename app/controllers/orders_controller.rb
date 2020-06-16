@@ -25,6 +25,13 @@ class OrdersController < ApplicationController
     end
 
     def checkout
-        #change all order_open to false
+        ordArr = []
+        params[:order].each do |id|
+            ord = Order.find(id)
+            ord.status = false
+            ord.save
+            ordArr.push(ord)
+        end
+        render json: ordArr
     end
 end
