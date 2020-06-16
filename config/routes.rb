@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :ingredients, only: [:index]
   resources :pizzas, only: [:create, :index]
   resources :customers, only: [:create, :update, :show]
-  resources :orders, only: [:create]
+  resources :orders, only: [:create, :destroy]
   
   post '/login', to: 'customers#login'
   get '/ingredients/prices', to: 'ingredients#prices'

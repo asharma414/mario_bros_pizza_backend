@@ -34,4 +34,8 @@ class OrdersController < ApplicationController
         end
         render json: ordArr
     end
+
+    def destroy
+        render json: Order.destroy(params[:id])
+    end
 end
