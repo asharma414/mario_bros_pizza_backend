@@ -15109,3 +15109,182 @@ Processing by PizzasController#index as */*
 Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.9ms | Allocations: 5620)
 
 
+Started GET "/ingredients" for ::1 at 2020-06-16 15:02:02 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-16 15:02:02 -0400
+  [1m[35m (32.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (32.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 39ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 2472)
+
+
+  [1m[36mIngredient Load (40.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 114ms (Views: 20.7ms | ActiveRecord: 53.0ms | Allocations: 14244)
+
+
+Started GET "/ingredients/prices" for ::1 at 2020-06-16 15:02:05 -0400
+Started GET "/ingredients" for ::1 at 2020-06-16 15:02:05 -0400
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 153)
+
+
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (5.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 17ms (Views: 11.3ms | ActiveRecord: 5.5ms | Allocations: 4748)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-16 15:02:09 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-16 15:02:09 -0400
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 153)
+
+
+  [1m[36mIngredient Load (12.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 28ms (Views: 15.2ms | ActiveRecord: 12.2ms | Allocations: 5093)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-16 15:02:19 -0400
+Started GET "/ingredients/prices" for ::1 at 2020-06-16 15:02:19 -0400
+Processing by IngredientsController#index as */*
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 0ms (Views: 0.2ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+  [1m[36mIngredient Load (0.9ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 11ms (Views: 10.0ms | ActiveRecord: 0.9ms | Allocations: 5100)
+
+
+Started GET "/pizzas" for ::1 at 2020-06-16 15:02:32 -0400
+Processing by PizzasController#index as */*
+  [1m[36mPizza Load (0.6ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+  [1m[36mIngredient Load (0.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "pizza_ingredients" ON "ingredients"."id" = "pizza_ingredients"."ingredient_id" WHERE "pizza_ingredients"."pizza_id" = $1[0m  [["pizza_id", 27]]
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "pizza_ingredients" ON "ingredients"."id" = "pizza_ingredients"."ingredient_id" WHERE "pizza_ingredients"."pizza_id" = $1[0m  [["pizza_id", 28]]
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "pizza_ingredients" ON "ingredients"."id" = "pizza_ingredients"."ingredient_id" WHERE "pizza_ingredients"."pizza_id" = $1[0m  [["pizza_id", 29]]
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+Completed 200 OK in 107ms (Views: 0.1ms | ActiveRecord: 7.1ms | Allocations: 16366)
+
+
+Started GET "/pizzas" for ::1 at 2020-06-16 15:02:42 -0400
+Processing by PizzasController#index as */*
+  [1m[36mPizza Load (1.1ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+  [1m[36mIngredient Load (0.5ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "pizza_ingredients" ON "ingredients"."id" = "pizza_ingredients"."ingredient_id" WHERE "pizza_ingredients"."pizza_id" = $1[0m  [["pizza_id", 27]]
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "pizza_ingredients" ON "ingredients"."id" = "pizza_ingredients"."ingredient_id" WHERE "pizza_ingredients"."pizza_id" = $1[0m  [["pizza_id", 28]]
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "pizza_ingredients" ON "ingredients"."id" = "pizza_ingredients"."ingredient_id" WHERE "pizza_ingredients"."pizza_id" = $1[0m  [["pizza_id", 29]]
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+Completed 200 OK in 14ms (Views: 0.1ms | ActiveRecord: 2.4ms | Allocations: 5649)
+
+
+Started GET "/ingredients/prices" for ::1 at 2020-06-16 15:07:00 -0400
+Processing by IngredientsController#prices as */*
+Completed 200 OK in 1ms (Views: 0.3ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+Started GET "/ingredients" for ::1 at 2020-06-16 15:07:00 -0400
+Processing by IngredientsController#index as */*
+  [1m[36mIngredient Load (31.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 68ms (Views: 36.5ms | ActiveRecord: 31.3ms | Allocations: 4698)
+
+
+Started GET "/ingredients/prices" for ::1 at 2020-06-16 15:07:29 -0400
+Started GET "/ingredients" for ::1 at 2020-06-16 15:07:29 -0400
+Processing by IngredientsController#prices as */*
+Processing by IngredientsController#index as */*
+Completed 200 OK in 1ms (Views: 0.4ms | ActiveRecord: 0.0ms | Allocations: 151)
+
+
+  [1m[36mIngredient Load (1.6ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients"[0m
+  ↳ app/controllers/ingredients_controller.rb:4:in `index'
+Completed 200 OK in 15ms (Views: 13.1ms | ActiveRecord: 1.6ms | Allocations: 4890)
+
+
+Started POST "/login" for ::1 at 2020-06-16 15:08:58 -0400
+Processing by CustomersController#login as JSON
+  Parameters: {"username"=>"p.nicholsen", "customer"=>{"username"=>"p.nicholsen"}}
+  [1m[36mCustomer Load (0.8ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."username" = $1 LIMIT $2[0m  [["username", "p.nicholsen"], ["LIMIT", 1]]
+  ↳ app/controllers/customers_controller.rb:14:in `login'
+Completed 200 OK in 15ms (Views: 0.4ms | ActiveRecord: 3.8ms | Allocations: 4543)
+
+
+Started POST "/orders" for ::1 at 2020-06-16 15:09:12 -0400
+Processing by OrdersController#create as JSON
+  Parameters: {"quantity"=>12, "customer_id"=>25, "size"=>"large", "bake"=>"normal", "cut"=>"square", "ingredients"=>[167, 179, 172, 176, 160, 161, 162], "delivery_instructions"=>"", "order"=>{"customer_id"=>25, "delivery_instructions"=>"", "quantity"=>12}}
+  [1m[36mIngredient Load (7.1ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 167], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:4:in `block in create'
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 179], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:4:in `block in create'
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 172], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:4:in `block in create'
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 176], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:4:in `block in create'
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 160], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:4:in `block in create'
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 161], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:4:in `block in create'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" WHERE "ingredients"."id" = $1 LIMIT $2[0m  [["id", 162], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:4:in `block in create'
+  [1m[36mPizza Load (0.9ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" WHERE "pizzas"."cut" = $1 AND "pizzas"."size" = $2 AND "pizzas"."bake" = $3[0m  [["cut", "square"], ["size", "large"], ["bake", "normal"]]
+  ↳ app/controllers/orders_controller.rb:7:in `create'
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:9:in `create'
+  [1m[36mPizza Create (0.7ms)[0m  [1m[32mINSERT INTO "pizzas" ("size", "cut", "bake", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["size", "large"], ["cut", "square"], ["bake", "normal"], ["created_at", "2020-06-16 19:09:12.793599"], ["updated_at", "2020-06-16 19:09:12.793599"]]
+  ↳ app/controllers/orders_controller.rb:9:in `create'
+  [1m[36mPizzaIngredient Create (0.6ms)[0m  [1m[32mINSERT INTO "pizza_ingredients" ("pizza_id", "ingredient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pizza_id", 32], ["ingredient_id", 160], ["created_at", "2020-06-16 19:09:12.799335"], ["updated_at", "2020-06-16 19:09:12.799335"]]
+  ↳ app/controllers/orders_controller.rb:9:in `create'
+  [1m[36mPizzaIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "pizza_ingredients" ("pizza_id", "ingredient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pizza_id", 32], ["ingredient_id", 161], ["created_at", "2020-06-16 19:09:12.802263"], ["updated_at", "2020-06-16 19:09:12.802263"]]
+  ↳ app/controllers/orders_controller.rb:9:in `create'
+  [1m[36mPizzaIngredient Create (0.2ms)[0m  [1m[32mINSERT INTO "pizza_ingredients" ("pizza_id", "ingredient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pizza_id", 32], ["ingredient_id", 162], ["created_at", "2020-06-16 19:09:12.804381"], ["updated_at", "2020-06-16 19:09:12.804381"]]
+  ↳ app/controllers/orders_controller.rb:9:in `create'
+  [1m[36mPizzaIngredient Create (0.3ms)[0m  [1m[32mINSERT INTO "pizza_ingredients" ("pizza_id", "ingredient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pizza_id", 32], ["ingredient_id", 167], ["created_at", "2020-06-16 19:09:12.806406"], ["updated_at", "2020-06-16 19:09:12.806406"]]
+  ↳ app/controllers/orders_controller.rb:9:in `create'
+  [1m[36mPizzaIngredient Create (2.5ms)[0m  [1m[32mINSERT INTO "pizza_ingredients" ("pizza_id", "ingredient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pizza_id", 32], ["ingredient_id", 172], ["created_at", "2020-06-16 19:09:12.809330"], ["updated_at", "2020-06-16 19:09:12.809330"]]
+  ↳ app/controllers/orders_controller.rb:9:in `create'
+  [1m[36mPizzaIngredient Create (0.7ms)[0m  [1m[32mINSERT INTO "pizza_ingredients" ("pizza_id", "ingredient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pizza_id", 32], ["ingredient_id", 176], ["created_at", "2020-06-16 19:09:12.814963"], ["updated_at", "2020-06-16 19:09:12.814963"]]
+  ↳ app/controllers/orders_controller.rb:9:in `create'
+  [1m[36mPizzaIngredient Create (0.4ms)[0m  [1m[32mINSERT INTO "pizza_ingredients" ("pizza_id", "ingredient_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["pizza_id", 32], ["ingredient_id", 179], ["created_at", "2020-06-16 19:09:12.818215"], ["updated_at", "2020-06-16 19:09:12.818215"]]
+  ↳ app/controllers/orders_controller.rb:9:in `create'
+  [1m[35m (19.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:9:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:11:in `create'
+  [1m[36mPizza Update (0.4ms)[0m  [1m[33mUPDATE "pizzas" SET "price" = $1, "updated_at" = $2 WHERE "pizzas"."id" = $3[0m  [["price", "16.8"], ["updated_at", "2020-06-16 19:09:12.842998"], ["id", 32]]
+  ↳ app/controllers/orders_controller.rb:11:in `create'
+  [1m[35m (0.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:11:in `create'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/orders_controller.rb:17:in `create'
+  [1m[36mCustomer Load (0.4ms)[0m  [1m[34mSELECT "customers".* FROM "customers" WHERE "customers"."id" = $1 LIMIT $2[0m  [["id", 25], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:17:in `create'
+  [1m[36mPizza Load (0.2ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas" WHERE "pizzas"."id" = $1 LIMIT $2[0m  [["id", 32], ["LIMIT", 1]]
+  ↳ app/controllers/orders_controller.rb:17:in `create'
+  [1m[36mOrder Create (41.7ms)[0m  [1m[32mINSERT INTO "orders" ("customer_id", "pizza_id", "created_at", "updated_at", "delivery_instructions", "quantity", "total_price") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["customer_id", 25], ["pizza_id", 32], ["created_at", "2020-06-16 19:09:12.867672"], ["updated_at", "2020-06-16 19:09:12.867672"], ["delivery_instructions", ""], ["quantity", 12], ["total_price", "201.6"]]
+  ↳ app/controllers/orders_controller.rb:17:in `create'
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/orders_controller.rb:17:in `create'
+Completed 200 OK in 207ms (Views: 0.6ms | ActiveRecord: 88.2ms | Allocations: 35105)
+
+
+Started GET "/pizzas" for ::1 at 2020-06-16 15:09:33 -0400
+Processing by PizzasController#index as */*
+  [1m[36mPizza Load (0.5ms)[0m  [1m[34mSELECT "pizzas".* FROM "pizzas"[0m
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+  [1m[36mIngredient Load (0.3ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "pizza_ingredients" ON "ingredients"."id" = "pizza_ingredients"."ingredient_id" WHERE "pizza_ingredients"."pizza_id" = $1[0m  [["pizza_id", 27]]
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+  [1m[36mIngredient Load (0.4ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "pizza_ingredients" ON "ingredients"."id" = "pizza_ingredients"."ingredient_id" WHERE "pizza_ingredients"."pizza_id" = $1[0m  [["pizza_id", 28]]
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+  [1m[36mIngredient Load (0.2ms)[0m  [1m[34mSELECT "ingredients".* FROM "ingredients" INNER JOIN "pizza_ingredients" ON "ingredients"."id" = "pizza_ingredients"."ingredient_id" WHERE "pizza_ingredients"."pizza_id" = $1[0m  [["pizza_id", 29]]
+  ↳ app/controllers/pizzas_controller.rb:5:in `index'
+Completed 200 OK in 11ms (Views: 0.1ms | ActiveRecord: 1.4ms | Allocations: 5647)
+
+
