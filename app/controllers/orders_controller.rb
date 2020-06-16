@@ -1,5 +1,11 @@
 class OrdersController < ApplicationController
 
+    def index
+        # byebug
+        open_orders = Order.where(customer_id: params[:id], status: true)
+        render json: open_orders.to_json(except: [:created_at, :updated_at], include: {pizza: {include: {ingredients: {except: [:created_at, :updated_at]}}, except: [:created_at, :updated_at]}})
+    end
+
     def create
         paramIngredients = params[:ingredients].map {|id| Ingredient.find(id)}
         paramIngredients.sort_by! {|ing| ing.id}
@@ -14,7 +20,11 @@ class OrdersController < ApplicationController
         end
         
         total = pizza.price * params[:quantity]
-        order = Order.create(customer_id: params[:customer_id], pizza_id: pizza.id, delivery_instructions: params[:delivery_instructions], quantity: params[:quantity], total_price: total)
+        order = Order.create(customer_id: params[:customer_id], pizza_id: pizza.id, delivery_instructions: params[:delivery_instructions], quantity: params[:quantity], total_price: total, status: true)
         render json: order
+    end
+
+    def checkout
+        #change all order_open to false
     end
 end

@@ -66,7 +66,7 @@ ann = Customer.create(name: "Ann Duong", username: "a.duong", address: "601 F St
 shannon = Customer.create(name: "Shannon Nabors", username: "s.nabors", address: "850 10th St NW")
 chine = Customer.create(name: "Chine Anikwe", username: "c.anikwe", address: "900 NY Ave")
 
-order1 = Order.create(customer: paul, pizza: chz, delivery_instructions: "hurry up", quantity: 1, total_price: chz.price)
-order2 = Order.create(customer: ann, pizza: pep, delivery_instructions: "i am hungry", quantity: 1, total_price: pep.price)
-order3 = Order.create(customer: shannon, pizza: chz, delivery_instructions: "no anchovies this time", quantity: 1, total_price: chz.price)
-order4 = Order.create(customer: chine, pizza: veg, delivery_instructions: "don't send the creepy bike guy", quantity: 1, total_price: veg.price)
+order1 = Order.create(customer: paul, pizza: chz, delivery_instructions: "hurry up", quantity: 1, total_price: chz.price, status: false)
+order2 = Order.create(customer: ann, pizza: pep, delivery_instructions: "i am hungry", quantity: 1, total_price: pep.price, status: false)
+order3 = Order.create(customer: shannon, pizza: chz, delivery_instructions: "no anchovies this time", quantity: 1, total_price: chz.price, status: false)
+order4 = Order.create(customer: chine, pizza: veg, delivery_instructions: "don't send the creepy bike guy", quantity: 1, total_price: veg.price, status: false)
