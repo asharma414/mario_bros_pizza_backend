@@ -13,6 +13,8 @@ class OrdersController < ApplicationController
             pizza = next_pies[0]
         end
         
-        render json: Order.create(customer_id: params[:customer_id], pizza_id: pizza.id, delivery_instructions: params[:delivery_instructions])
+        total = pizza.price * params[:quantity]
+        order = Order.create(customer_id: params[:customer_id], pizza_id: pizza.id, delivery_instructions: params[:delivery_instructions], quantity: params[:quantity], total_price: total)
+        render json: order
     end
 end
