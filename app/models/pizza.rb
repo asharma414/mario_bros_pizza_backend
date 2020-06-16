@@ -10,14 +10,15 @@ class Pizza < ApplicationRecord
     
 
     def calculate_price
-        
-        ingredient_array = self.ingredients.to_a
-        ingredient_array.map!(&:category)
-
-        total = Pizza.size_prices[self.size]
-        
-        total += ingredient_array.map {|ing| Ingredient.prices[ing]}.sum
-        return total
+        unless self.price
+            ingredient_array = self.ingredients.to_a
+            ingredient_array.map!(&:category)
+            total = Pizza.size_prices[self.size]
+            total += ingredient_array.map {|ing| Ingredient.prices[ing]}.sum
+            return total
+        else
+            return self.price
+        end
     end
 
     def self.size_prices
