@@ -32,7 +32,8 @@ class OrdersController < ApplicationController
             ord.save
             ordArr.push(ord)
         end
-        render json: ordArr
+        delivery_time = Customer.find(params[:id]).cycle_time_from_mario_pizza
+        render json: [delivery_time, ordArr]
     end
 
     def destroy

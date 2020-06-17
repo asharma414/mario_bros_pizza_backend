@@ -11,7 +11,7 @@ class Customer < ApplicationRecord
         big_url.gsub!(' ','%20') #RestClient is not as smart as Google Chrome
         response = RestClient.get(big_url)
         json = JSON.parse(response)
-        p json["features"][0]["geometry"]["coordinates"]
+        json["features"][0]["geometry"]["coordinates"]
         # data.features[0].geometry.coordinates
     end
 
@@ -32,7 +32,7 @@ class Customer < ApplicationRecord
         response = RestClient.get(big_url)
         json = JSON.parse(response)
         seconds = json["routes"][0]["duration"]
-        p (seconds / 60.0)
+        seconds / 60.0
     end
 
 end
